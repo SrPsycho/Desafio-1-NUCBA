@@ -21,13 +21,41 @@
             </div>
         </div>
         
+        <div id="overlay2">
+            <div class="segundoPop">
+                <input type="button" value="X" id="cerrar" onclick="cerrarVentana()">
+                <img src="assets/Frame.png" alt="foquito" id="img2">
+                <p class="texto2">¡Se cerrará la sesión inmediatamente!</p>
+                <input type="button" value="Ampliar Sesion" id="btn2" onclick="cerrarVentana()">
+            </div>
+        </div>
 
-
-    <input type="button" value="Cerrar sesion" id="cerrarSesion" onclick="sesion()">
+    <section class="botones">
+        <input type="button" value="Cookies" id="btnCookies" onclick="sesion(1)">
+        <input type="button" value="Cerrar sesion" id="btnSesion" onclick="sesion(2)">
+    </section>
+    
 
     <p class="datos">
         <strong>Desarrollado por Matias Hausen - 2022</strong>
     </p>
-    <script src="script.js"></script>
+    <script>
+
+    function sesion(opc){
+        switch(opc){
+            case 1: 
+                document.getElementById("overlay").style.display="block"; 
+                break;
+            case 2:
+                document.getElementById("overlay2").style.display="block"; 
+                break;
+        }
+    }   
+
+    function cerrarVentana(){
+        document.getElementById("overlay").style.display="none";
+        document.getElementById("overlay2").style.display="none";
+    }
+    </script>
 </body>
 </html>

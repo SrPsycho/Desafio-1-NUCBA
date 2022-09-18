@@ -7,8 +7,98 @@
     font-size: 4rem;
     
 }
+.botones{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 20%;
+    left: 27%;
+    top: 38%;
+}
+#btnCookies{
+    cursor: pointer;
+    width: 50%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background-color: #385069;
+    color: #fff;
+    margin: 20px;
+    animation-name: puff-in-center;
+    animation-duration: 4s;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+#btnCookies:hover{
+    transition-duration: 500ms;
+    font-weight: bold;
+    transform: scale(1.1);
+    text-shadow: 0px 7px 4px rgba(0,0,0,0.78);
+    box-shadow: 0px 7px 4px rgba(0,0,0,0.78);
+    
+}
+#btnSesion{
+    cursor: pointer;
+    width: 50%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background-color: #ED6755;
+    color: #fff;
+    margin: 20px;
+    animation-name: puff-in-center;
+    animation-duration: 4s;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+#btnSesion:hover{
+    transition-duration: 500ms;
+    font-weight: bold;
+    transform: scale(1.1);
+    text-shadow: 0px 7px 4px rgba(0,0,0,0.78);
+    box-shadow: 0px 7px 4px rgba(0,0,0,0.78);
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
 
 #overlay{
+        display: none;
         width: 100% ;
         height: 100% ;
         position:absolute ;
@@ -16,8 +106,21 @@
         left: 0 ;
         bottom: 0 ;
         right:0 ;
-        background:rgba(0,0,0,0.5);
+        background:rgba(0,0,0,0.9);
+        z-index: 1;
 } 
+#overlay2{
+    display: none;
+    width: 100% ;
+    height: 100% ;
+    position:absolute ;
+    top: 0 ;
+    left: 0 ;
+    bottom: 0 ;
+    right:0 ;
+    background:rgba(0,0,0,0.9);
+    z-index: 1;
+}
 
 .primerPop{
     font-family: 'Noto Sans', sans-serif;
@@ -35,7 +138,17 @@
     position: absolute;
     top: 5%;
     left: 93%;
+    font-size: 25px;
+    opacity: 35%;
     cursor: pointer;
+    border: none;
+    background-color:transparent;
+}
+#cerrar:hover{
+    color: red;
+    transition-duration: 500ms;
+    transform: scale(1.2);
+    text-shadow: 0px 7px 4px rgba(0,0,0,0.78);
 }
 
 #img1{
@@ -56,10 +169,68 @@
 #btn1{
     position: relative;
     top: 25%;
-    left: 40%;
+    left: 37%;
     cursor: pointer;
+    width: 25%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #ED6755;
+    color: #fff;
+    border: none;
+    ;
+}
+#btn1:hover{
+    transition-duration: 500ms;
+    transform: scale(1.2);
+    box-shadow: 0px 7px 4px rgba(0,0,0,0.78);
 }
 
+.segundoPop{
+    font-family: 'Noto Sans', sans-serif;
+    position: absolute;
+    display: block;
+    background-color: rgba(245, 245, 245, 0.753);
+    height: 45%;
+    width: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    border-radius: 25px;
+}
+#img2{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-90%);
+    height: 35%;
+}
+.texto2{
+    position: relative;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#btn2{
+    position: relative;
+    top: 25%;
+    left: 37%;
+    cursor: pointer;
+    width: 25%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #385069;
+    color: #fff;
+    border: none;
+    ;
+}
+#btn2:hover{
+    transition-duration: 500ms;
+    transform: scale(1.2);
+    box-shadow: 0px 7px 4px rgba(0,0,0,0.78);
+}
 .datos{
     font-family: 'Noto Sans', sans-serif;
     position: absolute;
