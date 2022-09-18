@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pop up</title>
+</head>
+<body>
+    <h1 class="Titulo">Desafio Pop Ups</h1>
+
+        <div id="overlay">  <!-- Este vorlay es la parte para oscurecer el fondo -->
+            <div class="primerPop">
+                <input type="button" value="X" id="cerrar" onclick="cerrarVentana()">
+                <img src="assets/Saly-27.png" alt="imagen claramente relacionable a las coockies... claro que si..." id="img1">
+                <p class="texto1">Utilizamos cookies  para mejorar la experiencia del usuario, la analítica y el marketing.</p>
+                <input type="button" value="Eso esta wenazo!" id="btn1" onclick="cerrarVentana()">
+            </div>
+        </div>
+        
+
+
+    <input type="button" value="Cerrar sesion" id="cerrarSesion" onclick="sesion()">
+
+    <p class="datos">
+        <strong>Desarrollado por Matias Hausen - 2022</strong>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
